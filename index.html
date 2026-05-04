@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Juno Catering - Teklif Paneli</title><style>:root{--color-background-primary:#fff;--color-background-secondary:#f5f4ef;--color-background-info:#e6f1fb;--color-border-tertiary:#dcd9cf;--color-border-secondary:#b4b2a9;--color-border-info:#85b7eb;--color-text-primary:#1a1a1a;--color-text-secondary:#5f5e5a;--color-text-tertiary:#888780;--color-text-info:#0c447c;--color-text-danger:#791f1f;--font-sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--border-radius-md:8px;--border-radius-lg:12px}body{margin:0;padding:24px;background:var(--color-background-secondary);font-family:var(--font-sans);max-width:1120px;margin-left:auto;margin-right:auto}input,button,select{font-family:inherit;font-size:13px;border-radius:6px;border:0.5px solid var(--color-border-tertiary);padding:4px 8px;background:var(--color-background-primary);color:var(--color-text-primary)}input:focus,select:focus{outline:none;border-color:var(--color-border-info);box-shadow:0 0 0 2px rgba(133,183,235,0.2)}button{cursor:pointer}button:hover{background:var(--color-background-secondary)}</style></head><body><style>
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><title>Juno Catering - Teklif Paneli</title><style>:root{--color-background-primary:#fff;--color-background-secondary:#f5f4ef;--color-background-info:#e6f1fb;--color-border-tertiary:#dcd9cf;--color-border-secondary:#b4b2a9;--color-border-info:#85b7eb;--color-text-primary:#1a1a1a;--color-text-secondary:#5f5e5a;--color-text-tertiary:#888780;--color-text-info:#0c447c;--color-text-danger:#791f1f;--font-sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--border-radius-md:8px;--border-radius-lg:12px}body{margin:0;padding:24px;background:var(--color-background-secondary);font-family:var(--font-sans);max-width:1240px;margin-left:auto;margin-right:auto}input,button,select{font-family:inherit;font-size:13px;border-radius:6px;border:0.5px solid var(--color-border-tertiary);padding:4px 8px;background:var(--color-background-primary);color:var(--color-text-primary)}input:focus,select:focus{outline:none;border-color:var(--color-border-info);box-shadow:0 0 0 2px rgba(133,183,235,0.2)}button{cursor:pointer}button:hover{background:var(--color-background-secondary)}</style></head><body><style>
   .tk-app { font-family: var(--font-sans); color: var(--color-text-primary); padding: 0.5rem 0; }
   .tk-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 0.5px solid var(--color-border-tertiary); }
   .tk-brand img { height: 52px; width: auto; display: block; }
@@ -6,7 +6,7 @@
   .tk-brand-text p { margin: 2px 0 0; font-size: 12px; color: var(--color-text-secondary); }
   .tk-brand-actions { margin-left: auto; display: flex; gap: 6px; }
   .tk-brand-actions button { font-size: 12px; padding: 5px 12px; }
-  .tk-grid { display: grid; grid-template-columns: 1fr 340px; gap: 16px; align-items: start; }
+  .tk-grid { display: grid; grid-template-columns: 1fr 440px; gap: 16px; align-items: start; }
   @media (max-width: 720px) { .tk-grid { grid-template-columns: 1fr; } }
   .tk-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 16px; }
   .tk-h { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 10px; letter-spacing: 0.02em; text-transform: uppercase; }
@@ -22,31 +22,43 @@
   .tk-chip { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 0.5px solid var(--color-border-tertiary); background: var(--color-background-primary); cursor: pointer; white-space: nowrap; color: var(--color-text-primary); }
   .tk-chip.active { background: var(--color-background-info); color: var(--color-text-info); border-color: var(--color-border-info); }
   .tk-list { max-height: 380px; overflow-y: auto; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); }
-  .tk-item { display: grid; grid-template-columns: 1fr 88px 68px 58px; gap: 8px; align-items: center; padding: 8px 12px; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
+  .tk-item { display: grid; grid-template-columns: 1fr 95px 70px 60px; gap: 10px; align-items: start; padding: 10px 12px; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
   .tk-item:last-child { border-bottom: none; }
   .tk-item:hover { background: var(--color-background-secondary); }
-  .tk-item .tk-name { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .tk-item .tk-cat-tag { font-size: 11px; color: var(--color-text-tertiary); }
-  .tk-item input[type=number] { width: 100%; height: 28px; font-size: 12px; padding: 2px 6px; }
-  .tk-item .tk-price-wrap { font-size: 11px; text-align: right; color: var(--color-text-secondary); }
-  .tk-item .tk-price-wrap input { width: 100%; height: 28px; font-size: 12px; padding: 2px 6px; text-align: right; font-variant-numeric: tabular-nums; }
-  .tk-item .tk-med { font-size: 10px; color: var(--color-text-tertiary); }
-  .tk-item .tk-add { height: 28px; font-size: 12px; padding: 0 8px; }
+  .tk-item .tk-name-cell { min-width: 0; padding-top: 4px; cursor: pointer; }
+  .tk-item .tk-name { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.3; }
+  .tk-item .tk-cat-tag { font-size: 11px; color: var(--color-text-tertiary); margin-top: 2px; display: inline-flex; align-items: center; gap: 4px; }
+  .tk-item .tk-cat-edit { opacity: 0; font-size: 10px; transition: opacity 0.15s; color: var(--color-text-info); }
+  .tk-item:hover .tk-cat-edit { opacity: 1; }
+  .tk-item input[type=number] { width: 100%; height: 30px; font-size: 13px; padding: 2px 8px; text-align: right; font-variant-numeric: tabular-nums; box-sizing: border-box; }
+  .tk-item .tk-price-cell, .tk-item .tk-qty-cell, .tk-item .tk-add-cell { display: flex; flex-direction: column; gap: 4px; }
+  .tk-item .tk-med { font-size: 10px; color: var(--color-text-tertiary); text-align: right; line-height: 1.2; padding-right: 4px; height: 12px; }
+  .tk-item .tk-qty-spacer, .tk-item .tk-add-spacer { font-size: 10px; line-height: 1.2; height: 12px; }
+  .tk-item .tk-add { height: 30px; font-size: 12px; padding: 0 8px; box-sizing: border-box; width: 100%; }
   .tk-custom-tag { display: inline-block; font-size: 9px; padding: 1px 5px; border-radius: 3px; background: #FFF4E5; color: #8A4B00; margin-left: 4px; vertical-align: middle; }
   .tk-selected { max-height: 280px; overflow-y: auto; }
 
-  .tk-sel-row .tk-sel-name { width: 100%; height: 30px; font-size: 13px; font-weight: 500; padding: 4px 8px; border: 0.5px solid transparent; background: transparent; text-align: left; font-variant-numeric: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--color-text-primary); }
-  .tk-sel-row .tk-sel-name:hover { border-color: var(--color-border-tertiary); background: var(--color-background-primary); }
-  .tk-sel-row .tk-sel-name:focus { border-color: var(--color-border-info); background: var(--color-background-primary); text-overflow: clip; }
+  .tk-sel-row .tk-sel-name { width: 100%; height: 30px; font-size: 14px; font-weight: 500; padding: 4px 8px; border: 0.5px solid transparent; background: transparent; text-align: left; font-variant-numeric: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--color-text-primary); border-radius: 4px; }
   .tk-sel-head-info { color: var(--color-text-tertiary); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 4px 8px; border-bottom: 0.5px solid var(--color-border-secondary); }
-  .tk-sel-row.tk-sel-data { cursor: default; transition: background 0.1s; }
+  .tk-sel-row { padding: 10px 8px; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
+  .tk-sel-row input[type=number] { height: 30px; font-size: 13px; padding: 2px 8px; text-align: right; font-variant-numeric: tabular-nums; }
+  .tk-sel-row.tk-sel-data { display: grid; grid-template-columns: 16px 1fr 100px 24px; grid-template-areas: "drag name total del" "drag inputs inputs inputs"; gap: 8px 10px; align-items: center; cursor: default; transition: background 0.1s; border-radius: 6px; }
+  .tk-sel-row.tk-sel-data:hover { background: var(--color-background-secondary); }
   .tk-sel-row.tk-sel-data.tk-dragging { opacity: 0.4; }
-  .tk-sel-row.tk-sel-data.tk-drag-over { background: var(--color-background-info); border-radius: 6px; }
+  .tk-sel-row.tk-sel-data.tk-drag-over { background: var(--color-background-info); }
+  .tk-sel-row.tk-sel-data .tk-drag { grid-area: drag; }
+  .tk-sel-row.tk-sel-data .tk-sel-name { grid-area: name; }
+  .tk-sel-row.tk-sel-data .tk-x { grid-area: del; align-self: start; padding-top: 6px; }
+  .tk-sel-row.tk-sel-data .tk-total { grid-area: total; align-self: start; padding-top: 8px; text-align: right; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; color: var(--color-text-primary); white-space: nowrap; }
+  .tk-sel-row.tk-sel-data .tk-sel-inputs { grid-area: inputs; display: flex; gap: 14px; align-items: center; padding-left: 4px; }
+  .tk-sel-row.tk-sel-data .tk-input-wrap { display: flex; align-items: center; gap: 8px; }
+  .tk-sel-row.tk-sel-data .tk-input-lbl { font-size: 12px; color: var(--color-text-secondary); white-space: nowrap; }
+  .tk-sel-row.tk-sel-data .tk-input-wrap input { width: 88px; }
   .tk-drag { color: var(--color-text-tertiary); cursor: grab; user-select: none; font-size: 14px; line-height: 30px; text-align: center; letter-spacing: -2px; padding: 0 2px; }
   .tk-drag:active { cursor: grabbing; }
   .tk-sel-row .tk-x { background: transparent; border: none; color: var(--color-text-tertiary); cursor: pointer; font-size: 16px; padding: 0; }
   .tk-sel-row .tk-x:hover { color: var(--color-text-danger); }
-  .tk-sel-row .tk-total { text-align: right; font-variant-numeric: tabular-nums; font-size: 12px; }
+
   .tk-empty { padding: 20px; text-align: center; color: var(--color-text-tertiary); font-size: 13px; }
   .tk-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
   .tk-metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 10px 12px; }
@@ -55,13 +67,15 @@
   .tk-metric.prim { background: #E6F1FB; }
   .tk-metric.prim .tk-lbl { color: #0C447C; }
   .tk-metric.prim .tk-val { color: #0C447C; }
-  .tk-fix { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
-  .tk-fix label { font-size: 12px; color: var(--color-text-secondary); display: block; margin-bottom: 2px; }
-  .tk-fix input[type=number] { width: 100%; height: 32px; font-size: 13px; padding: 2px 8px; }
-  .tk-pers-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 8px; align-items: end; padding: 10px 12px; background: var(--color-background-secondary); border-radius: 8px; margin-bottom: 10px; }
-  .tk-pers-grid label { font-size: 11px; color: var(--color-text-secondary); display: block; margin-bottom: 3px; }
-  .tk-pers-grid input { width: 100%; height: 32px; font-size: 13px; padding: 2px 8px; }
-  .tk-pers-grid .tk-pers-tot { font-size: 13px; font-weight: 500; padding: 6px 10px; background: var(--color-background-primary); border-radius: 6px; text-align: right; font-variant-numeric: tabular-nums; }
+  .tk-fix { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 6px; }
+  .tk-fix > div { display: flex; flex-direction: column; }
+  .tk-fix label { font-size: 11px; color: var(--color-text-secondary); display: block; margin-bottom: 4px; }
+  .tk-fix input[type=number] { width: 100%; height: 36px; font-size: 13px; padding: 2px 10px; box-sizing: border-box; }
+  .tk-pers-grid { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 12px; align-items: stretch; padding: 12px 14px; background: var(--color-background-secondary); border-radius: 8px; margin-bottom: 14px; }
+  .tk-pers-grid > div { display: flex; flex-direction: column; }
+  .tk-pers-grid label { font-size: 11px; color: var(--color-text-secondary); display: block; margin-bottom: 4px; }
+  .tk-pers-grid input { width: 100%; height: 36px; font-size: 13px; padding: 2px 10px; box-sizing: border-box; }
+  .tk-pers-grid .tk-pers-tot { font-size: 14px; font-weight: 500; height: 36px; padding: 0 12px; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 6px; text-align: right; font-variant-numeric: tabular-nums; display: flex; align-items: center; justify-content: flex-end; box-sizing: border-box; }
 
   .tk-given-box { margin-top: 12px; padding: 12px 14px; background: #FFF8E5; border: 0.5px solid #E8C66A; border-radius: var(--border-radius-md); }
   .tk-given-head { margin-bottom: 8px; }
@@ -313,6 +327,22 @@
   </div>
 </div>
 
+
+<!-- Kategori düzenleme modal -->
+<div class="tk-modal-bg" id="tk-modal-editcat">
+  <div class="tk-modal">
+    <h4>Ürün düzenle</h4>
+    <div class="tk-row"><label>Ürün adı</label><input type="text" id="tk-ec-name" /></div>
+    <div class="tk-row"><label>Kategori</label><select id="tk-ec-cat"></select></div>
+    <div class="tk-row"><label>Bölüm</label><select id="tk-ec-sec"><option value="yemek">Yemek</option><option value="icecek">İçecek</option></select></div>
+    <p class="tk-hint" style="margin: 4px 0 0;">Bu değişiklik sadece bu cihazda saklanır. Drive ile senkron etmek için katalogu Drive'da paylaşabilirsiniz.</p>
+    <div class="tk-modal-actions">
+      <button id="tk-ec-cancel">İptal</button>
+      <button id="tk-ec-save" class="tk-btn-prim">Kaydet</button>
+    </div>
+  </div>
+</div>
+
 <!-- Excel yükleme modal -->
 <div class="tk-modal-bg" id="tk-modal-import">
   <div class="tk-modal">
@@ -549,16 +579,22 @@ function renderList() {
     const teklif = i.count > 0 ? `${i.count} teklif` : 'manuel ekleme';
     return `
     <div class="tk-item" data-id="${i.id}">
-      <div>
+      <div class="tk-name-cell" data-edit-cat="${i.id}" title="Kategoriyi düzenlemek için tıkla">
         <div class="tk-name" title="${esc(i.name)}">${esc(i.name)}${tag}</div>
-        <div class="tk-cat-tag">${esc(i.category)} · ${teklif}</div>
+        <div class="tk-cat-tag">${esc(i.category)} · ${teklif}<span class="tk-cat-edit">✎</span></div>
       </div>
-      <div class="tk-price-wrap">
+      <div class="tk-price-cell">
         <input type="number" min="0" step="10" value="${cur}" data-catprice="${i.id}" title="Birim fiyat" style="${changed ? 'color:#0C447C;font-weight:500;' : ''}" />
         <div class="tk-med">${med}</div>
       </div>
-      <input type="number" min="0" step="1" value="0" data-qty="${i.id}" placeholder="adet" />
-      <button class="tk-add" data-add="${i.id}">Ekle</button>
+      <div class="tk-qty-cell">
+        <input type="number" min="0" step="1" value="0" data-qty="${i.id}" placeholder="adet" />
+        <div class="tk-qty-spacer"></div>
+      </div>
+      <div class="tk-add-cell">
+        <button class="tk-add" data-add="${i.id}">Ekle</button>
+        <div class="tk-add-spacer"></div>
+      </div>
     </div>
   `;}).join('');
   list.querySelectorAll('[data-catprice]').forEach(el => el.addEventListener('input', () => {
@@ -573,6 +609,13 @@ function renderList() {
     }
     el.style.color = (overrides[id] != null) ? '#0C447C' : '';
     el.style.fontWeight = (overrides[id] != null) ? '500' : '';
+  }));
+  list.querySelectorAll('[data-edit-cat]').forEach(el => el.addEventListener('click', e => {
+    e.stopPropagation();
+    const id = Number(el.dataset.editCat);
+    const item = items.find(x => x.id === id);
+    if (!item) return;
+    openEditCatModal(item);
   }));
   list.querySelectorAll('[data-add]').forEach(btn => btn.addEventListener('click', e => {
     const id = Number(btn.dataset.add);
@@ -607,8 +650,8 @@ function renderSelected() {
         <div class="tk-sel-inputs">
           <div class="tk-input-wrap"><span class="tk-input-lbl">Birim</span><input type="number" min="0" step="10" value="${s.unit}" data-unit="${id}" /></div>
           <div class="tk-input-wrap"><span class="tk-input-lbl">Adet</span><input type="number" min="0" step="1" value="${s.qty}" data-q="${id}" /></div>
-          <div class="tk-total" title="Tutar">${fmt(tot)}</div>
         </div>
+        <div class="tk-total" title="Tutar">${fmt(tot)}</div>
       </div>`;
     }).join('');
 
@@ -1471,6 +1514,63 @@ function closeDriveModal() { $('tk-modal-drive').className = 'tk-modal-bg'; }
 $('tk-drive-btn').addEventListener('click', openDriveModal);
 $('tk-drive-close').addEventListener('click', closeDriveModal);
 $('tk-modal-drive').addEventListener('click', e => { if (e.target.id === 'tk-modal-drive') closeDriveModal(); });
+
+
+// === KATEGORİ DÜZENLEME ===
+let editingItemId = null;
+
+function openEditCatModal(item) {
+  editingItemId = item.id;
+  const sel = $('tk-ec-cat');
+  sel.innerHTML = cats.map(c => `<option value="${esc(c)}"${c === item.category ? ' selected' : ''}>${esc(c)}</option>`).join('') + `<option value="__new__">+ Yeni kategori…</option>`;
+  $('tk-ec-name').value = item.name;
+  $('tk-ec-sec').value = item.section;
+  $('tk-modal-editcat').className = 'tk-modal-bg on';
+}
+
+function closeEditCatModal() {
+  $('tk-modal-editcat').className = 'tk-modal-bg';
+  editingItemId = null;
+}
+
+$('tk-ec-cat').addEventListener('change', e => {
+  if (e.target.value === '__new__') {
+    const newCat = prompt('Yeni kategori adı:');
+    if (newCat && newCat.trim()) {
+      const c = newCat.trim();
+      if (!cats.includes(c)) cats.push(c);
+      const sel = $('tk-ec-cat');
+      sel.innerHTML = cats.map(x => `<option value="${esc(x)}"${x === c ? ' selected' : ''}>${esc(x)}</option>`).join('') + `<option value="__new__">+ Yeni kategori…</option>`;
+    } else {
+      e.target.value = cats[0];
+    }
+  }
+});
+
+$('tk-ec-cancel').addEventListener('click', closeEditCatModal);
+$('tk-ec-save').addEventListener('click', () => {
+  if (editingItemId == null) return;
+  const item = items.find(x => x.id === editingItemId);
+  if (!item) return;
+  const newName = $('tk-ec-name').value.trim();
+  if (!newName) { alert('Ürün adı boş olamaz'); return; }
+  item.name = newName;
+  item.category = $('tk-ec-cat').value;
+  item.section = $('tk-ec-sec').value;
+  // Custom değilse, custom yapalım (override edilmiş sayalım) ki localStorage'a kaydedilsin
+  item.custom = true;
+  saveCatalog();
+  // Seçili menüde varsa orada da güncelle
+  if (state.selected[item.id]) {
+    state.selected[item.id].item = item;
+  }
+  closeEditCatModal();
+  renderCats();
+  renderList();
+  renderSelected();
+});
+
+$('tk-modal-editcat').addEventListener('click', e => { if (e.target.id === 'tk-modal-editcat') closeEditCatModal(); });
 
 // Init
 state.filter = 'Tümü';
